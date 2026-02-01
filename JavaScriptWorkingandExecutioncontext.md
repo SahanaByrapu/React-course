@@ -1,6 +1,7 @@
 **Execution Context**
 
 |**Variable Environment**| **Thread of Execution** |
+|----------------|-----------|
 | **Memory** | **Code** |
 |------------|-------------|
 | Key:value  |  *---- |
@@ -30,7 +31,7 @@ var square4 = square(4);
 when the above code is run, 
 
 
-|-------------| -------|
+
 | **Memory** | **Code** |
 |------------| -------------------|
 | **Phase 1**     |               |
