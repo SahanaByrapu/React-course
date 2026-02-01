@@ -30,8 +30,6 @@ var square4 = square(4);
 
 when the above code is run, 
 
-
-
 | **Memory** | **Code** |
 |------------| -------------------|
 | **Phase 1**     |               |
@@ -53,6 +51,34 @@ when the above code is run,
 **Phase 2: Code execution**, javascript code is executed line by line, and replaces the undefined values with the initialized values.
 
 Once the java script code ends, the whole global execution context also deletes;
+
+**Call Stack:**
+
+The global execution context is pushed into the Call Stack. whenever the function is invoked, the new execution context is pushed into Call Stack.
+
+<img width="429" height="375" alt="image" src="https://github.com/user-attachments/assets/7b63d8b5-6af1-4336-af12-47c43730935e" />
+
+When the execution E1 is done, its popped out of the stack and control goes back to Global Execution Context, similarly prcedure is followed for the new execution context for E2.
+
+Call stack maintains the **order of execution** of execution contexts.
+
+Various names for the Call stack:
+1. Execution Context Stack.
+2. Program Stack
+3. Control Stack
+4. Runtime Stack
+5. Machine Stack
+
+
+
+
+
+
+
+
+
+
+
 
 
 
