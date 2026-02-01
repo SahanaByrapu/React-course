@@ -4,7 +4,7 @@
 |---- |------|
 | 1.  | How JavaScript works and Execution content |
 | 2.  | How JavaScript is executed and Call Stack |
-| 3.  | Hosting in JavaScript (variables&functions) |
+| 3.  | Hoisting in JavaScript (variables&functions) |
 | 4.  | How functions work in JS & variable environment |
 | 5.  | Shortest JS Program -window &this keyword |
 | 6.  | undefined v/s not defined in JS |
