@@ -55,6 +55,7 @@ console.log(b);
 local memory + referencing to the lexical environment of the parent.
 
 
+<img width="473" height="372" alt="image" src="https://github.com/user-attachments/assets/6ae5e474-d015-4d31-a4eb-9ab76db41018" />
 
 
 
