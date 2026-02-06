@@ -65,3 +65,7 @@
 ✅ Handling Events
 ✅ Conditional Rendering
 ✅ Tailwind CSS
+
+
+[https://www.geeksforgeeks.org/reactjs/react/]
+[https://www.hackerrank.com/domains/react]
