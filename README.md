@@ -31,6 +31,7 @@
 | 27. | Event Bubbling and Capturing | 
 |     | (https://www.youtube.com/watch?v=aVSf0b1jVKk)f|
 
+[ https://leetcode.com/studyplan/30-days-of-javascript/]
 
 **React Course**
 
