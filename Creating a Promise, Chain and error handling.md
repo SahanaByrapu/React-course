@@ -50,7 +50,6 @@ function validateCart(cart)
 }
 
 ```
-
 **Scenario1:**
 
 ```
@@ -97,7 +96,7 @@ createOrder(cart)
   });
 })
 
-// Avoiding promis hell back
+// Avoiding promise hell back
 .then(function(orderId){
   return proceedToPayment(orderId));
 })
@@ -108,6 +107,39 @@ createOrder(cart)
   console.log(err.message);
 });
 
+
+//all the errors above catch are handled and functions below catch are executed no matter what happens.  
+.then(function(orderId){
+  return proceedToPayment(orderId));
+})
+.catch(function (err) {
+  console.log(err.message);
+})
+.then(function(paymentInfo){
+    console.log(paymentInfo);
+  });   
+
+<img width="610" height="264" alt="image" src="https://github.com/user-attachments/assets/c6c5f3df-3e82-4722-9662-afa51b994a71" />
+
+
+//specific exceptions can be handled using catch and  generic "catch" can also be added at the end.
+.then(function(orderId){
+  return proceedToPayment(orderId));
+})
+.catch(function (err) {
+  console.log(err.message);
+})
+.then(function(paymentInfo){
+    console.log(paymentInfo);
+  })
+.catch(function (err) {
+  console.log(err.message);
+})
+.then(function(orderId){
+    console.log("No matter what happens, I will definitely be called");
+  });
+
+ 
 function createOrder(cart){
   
 }
@@ -125,4 +157,5 @@ function validateCart(cart)
 }
 
 ```
+
 
