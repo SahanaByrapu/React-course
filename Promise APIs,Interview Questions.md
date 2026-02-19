@@ -26,7 +26,7 @@ after 3 seconds [val1,val2,val3]
 If p2 gets rejected in 1 sec, it will still wait for all promises to fulfill [val2, error, val3]
 It will wait for 3 sec, until all the promises gets settled even if one of promises gets failed.
 
-**3**Promise.race([p1,p2,p3])
+**3** Promise.race([p1,p2,p3])
 
 If p1 takes 3 sec, p2 takes 1 sec, p3 takes 2 sec.
 
