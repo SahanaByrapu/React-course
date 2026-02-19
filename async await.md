@@ -267,3 +267,53 @@ async function handlePromise() {
 }
 handlePromise();
 ```
+
+**Handling Actual Error**
+```
+const API_URL="https://invalid.github.com/users/urlabc"
+async function handlePromise() {
+
+    try{
+     const data = await fetch(API_URL); 
+     const jsonvalue =await data.json();
+     console.log(jsonValue);
+    }
+   catch(err) {
+    console.log(jsonvalue);
+    }
+}
+handlePromise();
+```
+
+<img width="570" height="282" alt="image" src="https://github.com/user-attachments/assets/7df473af-e9df-47a8-acb1-177da74e17b8" />
+
+**Older way of handling actual error**
+```
+const API_URL="https://invalid.github.com/users/urlabc"
+async function handlePromise() {
+
+    try{
+     const data = await fetch(API_URL); 
+     const jsonvalue =await data.json();
+     console.log(jsonValue);
+    }
+}
+
+handlePromise().catch(err => console.log(err));
+```
+
+<img width="569" height="291" alt="image" src="https://github.com/user-attachments/assets/0bb33ff1-eeaf-4274-bd97-0d7a1e3f3bae" />
+
+**Interview Tips**
+
+**Question: Async await? **
+
+Start with telling Async is a keyword used for functions, Await is used only inside async functions to handle promises, then further explain about the examples and dive deep into behind the scenes.
+
+**Async/Await Vs Promise/Catch:**
+
+**Async/Await:** Syntactic sugar over Promise Then/Catch, JS uses normal Promise behind the scenes.
+new way of writing the code, no need to deal with call backs and promise chaining.
+
+
+
