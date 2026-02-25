@@ -30,6 +30,8 @@
 | 26. | this keyword in JS |
 | 27. | Event Bubbling and Capturing | 
 |     | (https://www.youtube.com/watch?v=aVSf0b1jVKk)f|
+| 28. | JavaScript Interview Questions |
+
 
 [ https://leetcode.com/studyplan/30-days-of-javascript/]
 
