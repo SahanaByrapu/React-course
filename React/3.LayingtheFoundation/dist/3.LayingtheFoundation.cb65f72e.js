@@ -786,11 +786,12 @@ const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 lineNumber: 40,
                 columnNumber: 5
             }, undefined),
+            Title(),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Hello World React Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 6
             }, undefined),
             number,
@@ -798,7 +799,7 @@ const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "More Features"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 43,
+                lineNumber: 44,
                 columnNumber: 6
             }, undefined),
             1400
@@ -813,7 +814,7 @@ const HeadingComponent3 = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "Hello World React Functional Component"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 32
     }, undefined);
 _c3 = HeadingComponent3;
@@ -825,7 +826,7 @@ const root = (0, _clientDefault.default).createRoot(document.getElementById("roo
 //root.render(jsxheading);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 59,
+    lineNumber: 60,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

@@ -38,6 +38,7 @@ const HeadingComponent = () => (
     <div id="container">
      <Title />
     <Title> </Title>
+    {Title()}
      <h1>Hello World React Functional Component</h1>
      {number} 
      <h2>More Features</h2>
