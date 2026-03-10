@@ -1,0 +1,49 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 110px;
+}
+
+.nav-items > ul {
+  padding: 0px 20 px;
+  font-size: 14px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.res-card {
+  width: 200px;
+  color: "#f0f0f0";
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+.res-card :hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 195px;
+  margin: 5px;
+}
+/*# sourceMappingURL=4.ShowMetheCode.9e4c6fd2.css.map */
