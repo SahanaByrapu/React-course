@@ -8,9 +8,11 @@ const Body = () => {
     //Local State variable - Super powerful variable
     const [listOfRestaurants, setlistOfRestaurants] = useState(resList);
 
+   
     // Normal State variable
     //let listOfRestaurants = [];
      //setlistOfRestaurants([])
+     // const [listOfRestaurants, setlistOfRestaurants] = arr;
 
     // Normal JS variable
    /** let listOfRestaurants = [

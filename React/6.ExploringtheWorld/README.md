@@ -1,0 +1,6 @@
+**Monolithic architecture**
+
+
+
+**Microservices architecture**
+

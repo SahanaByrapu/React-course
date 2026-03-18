@@ -864,9 +864,10 @@ const RestaurantCard = (props)=>{
     }, undefined);
 };
 _c1 = RestaurantCard;
-const resObj = [
+const resList = [
     {
         "Restaurant_Name": "Sample Restaurant 1",
+        "id": "1234",
         "URL": "https://www.sample-restaurant1.com",
         "Timing": "10:00 AM - 10:00 PM",
         "Address": "123 Main Street, Sample City",
@@ -880,6 +881,35 @@ const resObj = [
     },
     {
         "Restaurant_Name": "Sample Restaurant 2",
+        "id": "1235",
+        "URL": "https://www.sample-restaurant2.com",
+        "Timing": "11:00 AM - 9:00 PM",
+        "Address": "456 Elm Street, Another City",
+        "Location": "Another Location",
+        "City": "Another City",
+        "Offer": "Free dessert with every meal",
+        "Contact_Number": "+1 987-654-3210",
+        "Cost_for_two": 30,
+        "Restaurant_Type": "Cuisine Type 2",
+        "Ratings": 4.0
+    },
+    {
+        "Restaurant_Name": "Sample Restaurant 1",
+        "id": "1236",
+        "URL": "https://www.sample-restaurant1.com",
+        "Timing": "10:00 AM - 10:00 PM",
+        "Address": "123 Main Street, Sample City",
+        "Location": "Sample Location",
+        "City": "Sample City",
+        "Offer": "10% off on orders over $50",
+        "Contact_Number": "+1 123-456-7890",
+        "Cost_for_two": 40,
+        "Restaurant_Type": "Cuisine Type 1",
+        "Ratings": 4.5
+    },
+    {
+        "Restaurant_Name": "Sample Restaurant 2",
+        "id": "1237",
         "URL": "https://www.sample-restaurant2.com",
         "Timing": "11:00 AM - 9:00 PM",
         "Address": "456 Elm Street, Another City",
@@ -892,6 +922,7 @@ const resObj = [
         "Ratings": 4.0
     }
 ];
+// not using keys (not acceptable) >>> using index as key >>>>>>> unique id (best practice)
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -901,27 +932,29 @@ const Body = ()=>{
                 children: " Search"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 85,
+                lineNumber: 118,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                    resData: resObj[0]
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 87,
-                    columnNumber: 17
-                }, undefined)
+                children: resList.map((restaurant, index)=>{
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                        resData: restaurant
+                    }, index, false, {
+                        fileName: "App.js",
+                        lineNumber: 121,
+                        columnNumber: 21
+                    }, undefined);
+                })
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 86,
+                lineNumber: 119,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 84,
+        lineNumber: 117,
         columnNumber: 9
     }, undefined);
 };
@@ -932,18 +965,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 95,
+                lineNumber: 130,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 96,
+                lineNumber: 131,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 94,
+        lineNumber: 129,
         columnNumber: 5
     }, undefined);
 };
@@ -951,7 +984,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 102,
+    lineNumber: 137,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
